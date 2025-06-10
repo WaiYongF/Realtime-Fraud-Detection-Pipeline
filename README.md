@@ -163,20 +163,6 @@ CERT_PATH: /path/to/cert
 | Throughput | 1000 TPS | Peak capacity |
 | Model Update | 4 hours | Full retrain cycle |
 
-## 📚 Documentation
-
-### Technical Guides
-- [API Reference](docs/api.md)
-- [Data Model](docs/data-model.md)
-- [ML Pipeline](docs/ml-pipeline.md)
-- [Deployment Guide](docs/deployment.md)
-
-### Operations
-- [Monitoring Guide](docs/monitoring.md)
-- [Disaster Recovery](docs/disaster-recovery.md)
-- [Security Protocols](docs/security.md)
-- [SLA Compliance](docs/sla.md)
-
 ## 🔒 Security Features
 
 - End-to-end encryption
