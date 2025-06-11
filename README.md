@@ -7,6 +7,12 @@ A production-grade real-time transaction fraud detection system leveraging advan
 
 This enterprise system delivers high-performance fraud detection with industry-leading accuracy (95% precision) and ultra-low latency (<100ms). Architected with modern design patterns for horizontal scalability, high availability, and maintainability at scale.
 
+## System Architecture
+
+<div align="center">
+  <img src="assets/system-architecture-cropped.png" alt="System Architecture Diagram" width="1000" />
+</div>
+
 ## 💫 Core Capabilities
 
 ### 🚀 Real-time Processing Engine
