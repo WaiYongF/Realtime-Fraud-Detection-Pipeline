@@ -179,3 +179,17 @@ CERT_PATH: /path/to/cert
 - PCI-DSS compliance
 - Regular penetration testing
 
+## Problems
+
+- Severe class imbalance in training data
+**Problem**: Fraud events were <2% of all transactions, so the model would default to “no fraud” and yield misleadingly high accuracy.
+**Solution**: Integrated SMOTE into an imblearn.Pipeline, and optimized our RandomizedSearchCV scoring on an F₂-score to emphasize recall—lifting true-fraud detection recall from ~0.30 to ~0.78 in testing
+
+- Insufficient observability on model runs
+**Problem**: When jobs failed or produced unexpected metrics, there was no centralized place to inspect logs or artifacts.
+**Solution**: Enabled dual logging to both file and stdout (so Airflow captures it), instrumented MLflow to log all metrics/artifacts (confusion matrix, PR curve), and stored model artifacts in MinIO—providing a full audit trail for every run
+
+## Question
+
+Why use Confluent Cloud for Apache Kafka?
+
